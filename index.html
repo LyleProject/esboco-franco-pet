@@ -58,11 +58,11 @@ a{color:inherit}
 img{display:block}
 :focus-visible{outline:3px solid var(--orange);outline-offset:3px;border-radius:8px}
 .wrap{max-width:1160px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
-.eyebrow{font-weight:800;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--orange-text)}
+.eyebrow{font-weight:800;font-size:13px;color:var(--orange-text)}
 section{padding-block:88px}
 @media (max-width:760px){section{padding-block:60px}}
 .sec-head{max-width:720px;margin-bottom:40px}
-.sec-head h2{font-size:clamp(34px,5vw,56px);margin-top:12px}
+.sec-head h2{font-size:clamp(34px,5vw,56px)}
 .sec-head p{margin-top:14px;color:var(--ink-soft);font-size:18px;max-width:52ch}
 
 /* botões */
@@ -102,8 +102,7 @@ nav.menu a:hover{background:var(--yellow);color:#17303B}
 .hero{--ink:#17303B;--ink-soft:#4B3B0E;--edge:#17303B;--surface:#fff;--yellow-soft:#FFE3A0;--orange-text:#8A2A06;background:var(--yellow);color:var(--ink);background-image:radial-gradient(rgba(23,48,59,.1) 2px,transparent 2px);background-size:24px 24px;padding-block:56px 84px;overflow:hidden;position:relative}
 .hero::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:30px;background:var(--bg);clip-path:ellipse(58% 100% at 50% 100%)}
 .hero .wrap{display:grid;grid-template-columns:1.02fr .98fr;gap:56px;align-items:center}
-.hero h1{font-size:clamp(40px,6.2vw,76px);margin-top:16px}
-.hero h1 mark{background:#fff;color:inherit;padding:0 .14em;border:3px solid var(--edge);border-radius:14px;box-shadow:4px 4px 0 var(--edge);display:inline-block;transform:rotate(-2deg);line-height:1.12}
+.hero h1{font-size:clamp(40px,6.2vw,76px)}
 .hero .lead{font-size:clamp(17px,1.6vw,20px);max-width:36ch;margin-top:22px;color:#3B3009;font-weight:600}
 .hero-ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
 .near{margin-top:32px;padding:16px;background:#fff;border:2px solid var(--edge);border-radius:20px;box-shadow:4px 4px 0 var(--edge);max-width:520px}
@@ -164,7 +163,7 @@ nav.menu a:hover{background:var(--yellow);color:#17303B}
 .card.feature .bigico{position:absolute;right:-20px;top:-20px;width:240px;height:240px;color:#fff;opacity:.09;z-index:-1}
 .card.feature .ico{width:64px;height:64px;border-radius:18px;background:var(--yellow);border:2px solid #fff;display:grid;place-items:center;color:#17303B;margin-bottom:auto}
 .card.feature .ico svg{width:34px;height:34px}
-.card .flag{position:absolute;top:22px;right:22px;background:var(--yellow);color:#17303B;font-weight:800;font-size:12px;letter-spacing:.08em;text-transform:uppercase;border:2px solid var(--edge);border-radius:999px;padding:6px 12px}
+.card .flag{position:absolute;top:22px;right:22px;background:var(--yellow);color:#17303B;font-weight:800;font-size:13px;border:2px solid var(--edge);border-radius:999px;padding:6px 12px}
 @media (max-width:860px){.card.s7,.card.s5{grid-column:span 12}.card{min-height:280px}}
 
 /* unidades */
@@ -181,7 +180,7 @@ nav.menu a:hover{background:var(--yellow);color:#17303B}
 .urow:nth-child(even){background:color-mix(in srgb,var(--yellow) 9%,var(--surface))}
 .uname{display:flex;flex-direction:column;gap:6px;min-width:0}
 .uname h4{font-size:22px}
-.uname .city{font-size:13px;font-weight:800;color:var(--orange-text);letter-spacing:.06em;text-transform:uppercase}
+.uname .city{font-size:14px;font-weight:800;color:var(--orange-text)}
 .tags2{display:flex;gap:6px;flex-wrap:wrap}
 .tag{font-size:12px;font-weight:800;padding:4px 10px;border-radius:999px;border:2px solid var(--edge);background:var(--yellow);color:#17303B}
 .tag.del{background:#CDEED9;color:#0B5A2B}
@@ -244,7 +243,7 @@ nav.menu a:hover{background:var(--yellow);color:#17303B}
 /* rodapé */
 footer.site{background:var(--band);color:var(--band-fg);padding-block:60px 36px;border-top:2px solid var(--edge)}
 .foot{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:32px}
-.foot h4{font-family:var(--body);font-weight:800;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--yellow);margin:0 0 12px}
+.foot h4{font-family:var(--body);font-weight:800;font-size:16px;color:var(--yellow);margin:0 0 12px}
 .foot p,.foot a{color:color-mix(in srgb,var(--band-fg) 80%,transparent);font-size:15px;text-decoration:none}
 .foot a:hover{color:#fff;text-decoration:underline}
 .foot .logo{color:var(--band-fg);margin-bottom:14px}
@@ -270,7 +269,7 @@ footer.site{background:var(--band);color:var(--band-fg);padding-block:60px 36px;
 .picker h3{font-size:28px}
 .picker-head p{color:var(--ink-soft);margin:6px 0 4px;font-size:15px}
 .pclose{font:inherit;font-size:22px;line-height:1;width:40px;height:40px;border-radius:50%;border:2px solid var(--edge);background:var(--surface);color:var(--ink);cursor:pointer;flex:none}
-.pcity{font-weight:800;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--orange-text);margin:18px 0 8px}
+.pcity{font-weight:800;font-size:14px;color:var(--orange-text);margin:18px 0 8px}
 .prow{display:flex;align-items:center;gap:12px;padding:12px 14px;border-radius:14px;border:2px solid var(--edge);text-decoration:none;margin-bottom:8px;font-weight:800}
 .prow:hover{background:var(--yellow);color:#17303B}
 .prow svg{width:26px;height:26px;color:var(--wa-deep);flex:none}
@@ -291,7 +290,6 @@ main{overflow-x:hidden}
 
 .load{animation:enter .8s cubic-bezier(.2,.7,.2,1) backwards;animation-delay:var(--d,0s)}
 @keyframes enter{from{opacity:0;transform:translateY(32px)}to{opacity:1;transform:none}}
-.hero h1 mark{animation:markIn .7s .55s cubic-bezier(.3,1.5,.5,1) backwards}
 @keyframes markIn{from{transform:scale(.7) rotate(-9deg);opacity:0}to{transform:rotate(-2deg);opacity:1}}
 .ph-main{animation:enterR 1s .25s cubic-bezier(.2,.7,.2,1) backwards}
 @keyframes enterR{from{opacity:0;transform:translateX(70px) rotate(4deg)}to{opacity:1;transform:none}}
@@ -427,7 +425,7 @@ header.top.scrolled{box-shadow:0 6px 0 rgba(23,48,59,.18)}
 <div class="progress" id="progress"></div>
 <div class="util">
   <div class="wrap">
-    <span><span class="dot"></span>Seg a Sáb 9h–21h · Dom 9h–13h</span>
+    <span><span class="dot"></span>Seg a Sáb 9h–21h, Dom 9h–13h</span>
     <span><a href="#unidades">10 unidades em Franco da Rocha, Francisco Morato e Caieiras</a></span>
   </div>
 </div>
@@ -469,8 +467,7 @@ header.top.scrolled{box-shadow:0 6px 0 rgba(23,48,59,.18)}
     <svg class="fpaw" style="left:92%;top:18%;width:42px;height:42px;--t:16s;--dl:8s;--r:-30deg"><use href="#i-paw"/></svg>
     <div class="wrap">
       <div>
-        <p class="eyebrow load" style="--d:.05s">Pet shop · Banho e Tosa · Delivery</p>
-        <h1 class="load" style="--d:.15s">Cuidando do <mark>seu animal</mark> como ele merece.</h1>
+        <h1 class="load" style="--d:.15s">Cuidando do seu animal como ele merece.</h1>
         <p class="lead load" style="--d:.3s">Rações, petiscos, acessórios e banho e tosa pertinho de você. Escolha a unidade e fale direto no WhatsApp.</p>
         <div class="hero-ctas load" style="--d:.42s">
           <a class="btn btn-wa" data-wa="Olá, Franco Pet! Quero atendimento." href="#"><svg><use href="#i-wa"/></svg>Falar no WhatsApp</a>
@@ -490,7 +487,7 @@ header.top.scrolled{box-shadow:0 6px 0 rgba(23,48,59,.18)}
         <div class="ph-main" data-hero-photo></div>
         <div class="ph-sub" data-hero-sub></div>
         <div class="sticker" data-logo-sticker><svg width="60" height="60" style="color:#17303B"><use href="#i-paw"/></svg></div>
-        <div class="badge">A loja completa!<small>RAÇÃO · PETISCOS · BANHO</small></div>
+        <div class="badge">A loja completa!<small>Ração, petiscos e banho</small></div>
       </div>
     </div>
   </section>
@@ -514,7 +511,6 @@ header.top.scrolled{box-shadow:0 6px 0 rgba(23,48,59,.18)}
   <section id="servicos">
     <div class="wrap">
       <div class="sec-head rv">
-        <p class="eyebrow">Serviços</p>
         <h2>Tudo para o seu pet, num lugar só.</h2>
         <p>Toque no serviço e escolha a unidade. A mensagem já vai pronta no WhatsApp.</p>
       </div>
@@ -553,7 +549,6 @@ header.top.scrolled{box-shadow:0 6px 0 rgba(23,48,59,.18)}
   <section id="unidades">
     <div class="wrap">
       <div class="sec-head rv">
-        <p class="eyebrow">Nossas unidades</p>
         <h2>Uma Franco Pet perto de você.</h2>
         <p>Escolha a cidade, veja o horário e chame a loja direto no WhatsApp.</p>
       </div>
@@ -572,7 +567,6 @@ header.top.scrolled{box-shadow:0 6px 0 rgba(23,48,59,.18)}
   <section class="how" id="como-funciona">
     <div class="wrap">
       <div class="sec-head rv">
-        <p class="eyebrow">Como funciona</p>
         <h2>Do WhatsApp ao rabinho abanando.</h2>
         <p>Sem formulário e sem fila no telefone.</p>
       </div>
@@ -587,7 +581,7 @@ header.top.scrolled{box-shadow:0 6px 0 rgba(23,48,59,.18)}
 
   <section id="depoimentos" hidden>
     <div class="wrap">
-      <div class="sec-head rv"><p class="eyebrow">Clientes</p><h2>Quem leva, volta.</h2></div>
+      <div class="sec-head rv"><h2>Quem leva, volta.</h2></div>
       <div class="reviews" id="reviews"></div>
     </div>
   </section>
@@ -595,7 +589,6 @@ header.top.scrolled{box-shadow:0 6px 0 rgba(23,48,59,.18)}
   <section id="galeria">
     <div class="wrap">
       <div class="sec-head rv">
-        <p class="eyebrow">Por dentro da loja</p>
         <h2>Venha conhecer a Franco Pet.</h2>
       </div>
       <div class="gal" data-gallery></div>
@@ -608,7 +601,7 @@ header.top.scrolled{box-shadow:0 6px 0 rgba(23,48,59,.18)}
 
   <section id="duvidas" style="padding-top:0">
     <div class="wrap">
-      <div class="sec-head rv"><p class="eyebrow">Dúvidas</p><h2>Perguntas frequentes.</h2></div>
+      <div class="sec-head rv"><h2>Perguntas frequentes.</h2></div>
       <div class="faq">
         <details class="rv"><summary>Como agendo banho e tosa?</summary><p>Chame no WhatsApp de uma das unidades de Banho e Tosa (Caieiras, Francisco Morato ou Serpa) e combine o horário.</p></details>
         <details class="rv"><summary>Qual o horário de funcionamento?</summary><p>De segunda a sábado, das 9h às 21h. Aos domingos, das 9h às 13h. Em Serpa e Vila Ramos, domingo até as 20h.</p></details>
@@ -647,12 +640,12 @@ header.top.scrolled{box-shadow:0 6px 0 rgba(23,48,59,.18)}
       <div>
         <h4>Unidades</h4>
         <p>Franco da Rocha, Francisco Morato e Caieiras.</p>
-        <p style="margin-top:8px"><a href="#unidades">Ver todas →</a></p>
+        <p style="margin-top:8px"><a href="#unidades">Ver todas</a></p>
       </div>
       <div>
         <h4>Trabalhe conosco</h4>
         <p>Quer fazer parte da equipe?</p>
-        <p style="margin-top:8px"><a data-job href="#" target="_blank" rel="noopener">Falar no WhatsApp →</a></p>
+        <p style="margin-top:8px"><a data-job href="#" target="_blank" rel="noopener">Falar no WhatsApp</a></p>
       </div>
       <div>
         <h4>Horário</h4>
@@ -700,8 +693,8 @@ const CONFIG = {
   ],
   reviews: []   // ex.: [{texto:"...", nome:"Maria, Franco da Rocha"}]  (só depoimentos reais)
 };
-const HRS = "Seg a Sáb 9h–21h · Dom 9h–13h";
-const HRS_LONG = "Seg a Sáb 9h–21h · Dom 9h–20h";
+const HRS = "Seg a Sáb 9h–21h, Dom 9h–13h";
+const HRS_LONG = "Seg a Sáb 9h–21h, Dom 9h–20h";
 const UNITS = [
   {city:"Franco da Rocha", name:"Azevedo Soares", area:"Centro",                 kinds:["Delivery"], whatsapp:"551148197057", hours:HRS},
   {city:"Franco da Rocha", name:"Basílio Fazzi",  area:"Companhia Fazenda Belém",kinds:["Delivery"], whatsapp:"551144448180", hours:HRS},
@@ -768,7 +761,7 @@ function openPicker(msg, kind){
     if(!list.length) return;
     plist.append(el("div","pcity",c));
     list.forEach(u => {
-      const a = el("a","prow", `${WA_SVG}<span>${u.name}<small>${[u.area,...u.kinds].filter(Boolean).join(" · ")}</small></span>`);
+      const a = el("a","prow", `${WA_SVG}<span>${u.name}<small>${[u.area,...u.kinds].filter(Boolean).join(", ")}</small></span>`);
       a.href = waLink(u.whatsapp, msg); a.target="_blank"; a.rel="noopener";
       a.addEventListener("click", closePicker); plist.append(a);
     });
